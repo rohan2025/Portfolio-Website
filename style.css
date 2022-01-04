@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home Page CSS */
+.home {
+  /* background-color: aquamarine; */
+  background: url(Images/Home-Background.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100% ;
+}
+
+nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  text-transform: uppercase;
+  /* background-color: rgb(153, 139, 139); */
+  background-color: black;
+  z-index: 1;
+}
+
+nav label {
+  width: auto;
+  float: left;
+  line-height: 80px;
+  padding: 0 30px;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+nav label a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0 15px;
+  float: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  padding: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  line-height: 80px;
+  color: rgb(199, 196, 196);
+}
+
+nav ul li a:hover {
+  color: rgb(143, 138, 138);
+}
+
+.home-content h1 {
+  color: white;
+  font-size: 80px;
+}
+
+.home-content {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  transform: translate(-45%);
+}
+
+.grey-color-text {
+  color: rgb(143, 138, 138);
+}
+
+.home-content a {
+  text-decoration: none;
+  border: 1px solid rgb(143, 138, 138);
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-size: x-large;
+  text-transform: uppercase;
+}
+
+.home-content a:hover {
+  background-color: rgb(143, 138, 138);
+  color: white;
+}
+
+/* Services Page CSS */
+.services {
+  height: 80vh;
+  padding: 100px 0;
+}
+
+.service-header h1 {
+  margin: 0;
+  text-align: center;
+  padding: 40px 0 0;
+  font-size: 50px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.service-header p {
+  text-align: center;
+  margin: 10px auto 16px;
+  width: 30%;
+}
+
+.services .cards {
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  margin: 150px 0;
+  color: white;
+}
+
+.services .cards .card {
+  /* background-color: yellow; */
+  /* display: inline-flex; */
+  width: 300px;
+  height: 270px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.services .cards .card1{
+    background: url(Images/front-end.png);
+}
+.services .cards .card2{
+    background: url(Images/back-end.png);
+}
+.services .cards .card3{
+    background: url(Images/graphic-design.png);
+}
+.services .cards .card4{
+    background: url(Images/video-editor.png);
+}
+
+.services .cards .card .card-icon {
+  background-color: aqua;
+  margin: 20px;
+  height: 45px;
+  width: 45px;
+}
+
+.services .cards .card h4 {
+  font-weight: 500;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.services .cards .card p {
+  font-weight: 300;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* Projects Page CSS */
+.projects {
+  height: 220vh;
+  padding: 100px 0;
+}
+
+.projects h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  font-size: 50px;
+}
+
+.projects .project-content .project-block {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.projects .project-content .project-block .content {
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(143, 138, 138);
+  height: 400px;
+  width: 500px;
+  padding: 0 20px;
+}
+
+.projects .project-content .project-block .image {
+  height: 400px;
+  overflow: hidden;
+}
+
+.projects .project-content .project-block .image img {
+  /* display: inline-block; */
+  object-fit: cover;
+  height: 400px;
+  width: 540px;
+  padding: 0;
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.projects .project-content .project-block .image img:hover {
+  transform: scale(1.1);
+}
+
+.project-heading,
+.project-subheading,
+.project-description {
+  margin: 10px;
+}
+
+/* About Me Page CSS */
+.about-me {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me .container {
+  /* background-color: yellow; */
+  /* width: 100%; */
+  padding: 0 60px;
+  display: flex;
+}
+
+.about-me .container .image {
+  display: flex;
+  padding: 0 60px;
+}
+
+.about-me .container .image .left {
+  border: 5px solid rgb(143, 138, 138);
+  width: 250px;
+  height: 300px;
+}
+
+.about-me .container .image .right img {
+  width: 250px;
+  border: 10px solid white;
+  margin: -45px -240px;
+}
+
+.about-me .container .content {
+  margin: -20px 0;
+}
+
+.about-me .container .content h1 {
+  margin: 0;
+  font-weight: 100;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.about-me .container .content h4 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.about-me .container .content p {
+  width: 700px;
+  margin: 15px 0 40px;
+  color: rgb(143, 138, 138);
+  font-weight: 300;
+}
+
+.about-me .container .content a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border: 1px solid rgb(143, 138, 138);
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+
+.about-me .container .content a:hover {
+  background-color: rgb(143, 138, 138);
+  color: white;
+}
+
+/* Contacts Page CSS */
+.contacts {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.contacts .container {
+  display: flex;
+}
+
+.contacts .container .card .card-icon {
+  background-color: aqua;
+  margin: 20px;
+  height: 45px;
+  width: 45px;
+}
+.contacts .container .card {
+  border-radius: 8px;
+  margin: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 130px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts .container .card .content h3 {
+  margin: 0 0 5px;
+}
+
+.contacts .container .card .content h6 {
+  margin: 0;
+}
+
+/* Footer CSS */
+footer{
+    height: 25vh;
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer h2{
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+footer h4{
+    margin: 0;
+}
+
+footer .icons i{
+    padding: 10px;
+}
+
+footer .copyright{
+    color: rgb(143, 138, 138);
+}
